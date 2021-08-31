@@ -1,11 +1,6 @@
 var inputDOM = document.getElementById("words-input");
 var wordListTable = document.getElementById("word-set");
-// var wordList = "fucky suck ass fucky suck ass fucky suck ass ass fucky suck ass ass fucky suck ass ass fucky suck ass ass fucky suck ass ass fucky suck ass ass fucky suck ass"
 var wordList = "where use life these world during new these with interest lead well make lead to should during a course will problem child mean again since course where out again around may off if between because form few both order too take must present fact not begin this part after follow will problem";
-// var wordList = "there is no fuckign way that this actually works this is absolutely incredible if it actually works i think i am literlaly going to shit my pants"
-// var wordList = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-// var wordList = "fucky suck ass fucky suck ass"
-// var wordList = "this is a generic wordlist yeah yeah"
 var totalChars = wordList.length;
 var lineCharCount = 0;
 var lineCharMax = 80;
