@@ -1,7 +1,7 @@
 # Quickkey
 
 
-[Quickkey](quickkey.datsko.dev) is a minimalistic typing test with word sets composed of an assortment of English's 1000 most common words.
+[Quickkey](https://quickkey.datsko.dev/) is a minimalistic typing test with word sets composed of an assortment of English's 1000 most common words.
 
 
 ## Instructions
