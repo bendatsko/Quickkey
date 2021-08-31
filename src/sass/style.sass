@@ -1,0 +1,263 @@
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap')
+
+$font-main: 'Lexend Deca', sans-serif
+$primary: #F75656
+
+body
+    background: #23272A
+    margin: 0
+    overflow-x: hidden
+
+#red
+    color: $primary
+
+#title
+    font-family: $font-main
+    font-weight: 900
+    position: absolute
+    font-size: 6.6vh
+    width: 100vw
+    text-align: center
+    margin-top: 18vh
+    #quick
+        color: white
+    #key
+        color: $primary
+
+#menuContainer
+    position: absolute
+    background: green
+    width: 57%
+    height: 5vh
+    margin-top: 38vh
+
+// #test-type
+//     position: absolute
+//     font-family: $font-main
+//     font-size: 2.65vh
+//     font-weight: 700
+//     color: #C8C9CA
+//     // margin-left: 22vw
+//     // margin-top: 38vh
+
+#wordListContainer
+    display: flex
+    width: auto
+    height: auto
+    justify-content: center
+    flex-wrap: wrap
+    align-content: flex-start
+
+#test-type
+    position: absolute
+    font-family: $font-main
+    font-size: 2.65vh
+    font-weight: 700
+    color: #C8C9CA
+    // margin-left: 0%
+    margin-top: -5%
+    text-align: left
+    // background: blue
+
+#test-stats
+    position: absolute
+    font-family: $font-main
+    font-size: 2.65vh
+    font-weight: 700
+    color: #C8C9CA
+    margin-top: -5%
+    // background: red
+    text-align: right
+    width: 37%
+    margin-left: 62%
+    // margin-left: -70vw
+    // margin-top: 38vh
+
+#word-set
+    position: absolute
+    color: #acadad
+    font-family: $font-main
+    font-size: 3.18vh
+    margin-top: 43vh
+    // margin-left: 1vw
+    line-height: 150%
+    // background: green
+
+    // background: green
+    // overflow: hidden 
+
+    th, td
+        font-weight: 500
+        // border: 1px solid black;
+        padding: 0px
+
+    table
+        padding: 0
+        margin-bottom: -1vh
+        // margin-left: -1%
+
+.character
+    // background: blue
+    border-spacing: 0
+    border: 0
+    display: inline-block
+    outline: 0px solid transparent
+
+#words-input
+    position: absolute
+    color: white
+    font-family: $font-main
+    font-size: 3.18vh
+    font-weight: 500
+    width: 56vw
+    margin-left: 22vw
+    margin-top: 20vh
+    line-height: 143%
+    opacity: 50
+
+#errorSpan
+    color: $primary
+
+#caret
+    position: absolute
+    // margin-top: 44vh
+    // margin-left: -54vw
+    width: .15vw
+    height: 3.5vh
+    background: $primary
+    animation: .3s linear forwards
+    margin-top: -4vh
+    transition: all 2 ease
+    animation: animateElement linear .3s
+
+#reset-container
+    position: absolute
+    width: 3.8vw
+    height: 3.8vw
+    background: #2C2F33
+    margin-left: 48vw
+    margin-top: 71vh
+    border-radius: 1.5vh
+    cursor: pointer
+    color: white
+    -webkit-user-select: all
+    -moz-user-select: all
+    -ms-user-select: all
+    // user-select: all
+
+    #reset-icon
+        width: 2.2vw
+        height: 2.2vw
+        display: block
+        margin-left: auto
+        margin-right: auto
+        margin-top: 20%
+        user-select: none
+
+#about-title
+    position: absolute
+    font-family: $font-main
+    font-weight: 800
+    width: 12.6vw
+    font-size: 8.5vh
+    margin-top: 101vh
+    margin-left: 20%
+    color: #FFFF
+
+#about-desc
+    position: absolute
+    font-family: $font-main
+    font-weight: 400
+    width: 60vw
+    font-size: 3vh
+    // margin-top: 112vh
+    color: #FFFF
+
+#results-title
+    position: absolute
+    font-family: $font-main
+    font-weight: 800
+    width: 12.6vw
+    font-size: 5.31vh
+    margin-top: 125vh
+    margin-left: 20%
+    color: #FFFF
+
+#results-desc
+    position: absolute
+    font-family: $font-main
+    font-weight: 400
+    width: 60vw
+    font-size: 3vh
+    // margin-top: 133vh
+    color: #FFFF
+
+#graph-title
+    position: absolute
+    font-family: $font-main
+    font-weight: 800
+    width: 40vw
+    font-size: 5.31vh
+    margin-top: 150vh
+    margin-left: 20%
+    color: #FFFF
+
+#graph-desc
+    position: absolute
+    font-family: $font-main
+    font-weight: 400
+    width: 60vw
+    font-size: 3vh
+    // margin-top: 160vh
+    color: #FFFF
+
+#contact-title
+    position: absolute
+    font-family: $font-main
+    font-weight: 800
+    width: 40vw
+    font-size: 5.31vh
+    margin-top: 172.5vh
+    margin-left: 20%
+    color: #FFFF
+
+#contact-desc
+    position: absolute
+    font-family: $font-main
+    font-weight: 400
+    width: 60vw
+    font-size: 3vh
+    // margin-top: 182.5vh
+    color: #FFFF
+
+#bgblob1
+    position: absolute
+    width: 24vw
+    margin-top: 0
+    margin-left: 0vw
+
+#bgblob2
+    position: absolute
+    width: 24vw
+    margin-top: 21vh
+    margin-left: 37.5vw
+
+#bgblob3
+    position: absolute
+    width: 19vw
+    margin-top: 37vh
+    margin-left: 37.5vw
+
+#bgblob4
+    position: absolute
+    width: 19vw
+    margin-top: 50vh
+    margin-left: 4vw
+
+#bgblob5
+    position: absolute
+    margin-top: 100vh
+    margin-left: -15vh
+
+//initiate automatic css updating: sass --watch src/sass/style.sass static/layout.css

@@ -1,0 +1,223 @@
+
+let selectedDivId = 0
+let controlPressed = false
+let backspacePressed = false
+
+
+// inputDOM.onkeyup = function() {
+//     let input = inputDOM.innerHTML.toString()
+
+//     let currentLength = input.length
+    
+
+//     for(let i = 0; i < input.length; i++) {
+
+//             if(document.getElementById(i.toString()).style.color != "white") {
+//             console.log("fucky ass" + i)
+
+//             let divContents = document.getElementById(i.toString()).innerHTML
+
+
+//             if(input.charAt(i) === divContents) {
+//                 console.log("yeah that's good")
+//                 document.getElementById(i.toString()).style.color = "white"
+//             }
+
+//             let iString = i.toString()
+//             if(input.charAt(i) === "") {
+//                 document.getElementById(iString).style.color = "#C8C9CA"
+//             }
+//         }
+
+
+//the thing above this kind of works i guess but not super well 
+        // if(input.charAt(i) !== divContents && input.charAt(i) !== "") {
+        //     // console.log("NO BAD")
+        //     document.getElementById(i.toString()).style.color = "#F75656"
+        // }
+
+
+// }
+
+
+
+// document.onkeydown = function {
+    
+// }
+
+// inputDOM.onkeydown = function() {
+//     let input = inputDOM.innerHTML.toString()
+//     let selectedDivId = input.length
+//     console.log(selectedDivId)
+
+
+
+// }
+
+
+
+// if(input.charAt(selectedDivId) === divContents) {
+//     console.log("yeah that's good")
+//     document.getElementById(selectedDivId.toString()).style.color = "white"
+// }
+
+// if(input.charAt(selectedDivId) != divContents) {
+//     console.log("NO BAD")
+//     document.getElementById(selectedDivId.toString()).style.color = "#F75656"
+// }
+
+// if(input.charAt(selectedDivId) === "") {
+//     document.getElementById(selectedDivId.toString()).style.color = "#C8C9CA"
+
+
+
+
+
+// inputDOM.onkeydown = function() {
+
+//     let input = inputDOM.innerHTML.toString()
+//     let key = event.keyCode || event.charCode
+//     let divContents = document.getElementById(selectedDivId.toString()).innerHTML
+//     let controlPressed = false
+
+//     if(key === 17 ) {
+//         ctrlOn = true
+//         console.log("you have just controlled")
+
+
+//         while(ctrlOn) {
+
+//             console.log("testing for backspace")
+//             if( key === 8 ) {
+//                 console.log("holy fucking shit this is amazing")
+//                 ctrlOn = false
+//             } 
+//             ctrlOn = false
+//         }
+//     }
+
+//     // regular backspace
+//     if( key === 8 ) {
+//         backspacePressed = true
+
+//     	selectedDivId--
+//         console.log("you jajve just backspace")
+//         document.getElementById(selectedDivId.toString()).style.color = "#C8C9CA"
+//     }
+
+    
+
+// }
+
+// inputDOM.onkeypress = function() {
+//     console.log("ok key has been pressed now i'm ending the testing for thingy")
+//     ctrlOn = false
+// }
+
+// let ctrlBack = false
+
+// //this detects the control backspaces
+// inputDOM.onkeydown = function() {
+//     let key = event.keyCode
+//     console.log(key)
+
+//     if(key === 17) {
+        
+//         inputDOM.onkeydown = function() {
+//             key = event.keyCode
+            
+//             if(key === 8) {
+//                 ctrlBack = true
+//                 if(ctrlBack === true) {
+//                     console.log("i acknowledge that the button was pressed.")
+
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// inputDOM.onkeypress = function() {
+
+//     if(ctrlBack === true) {
+//         let input = inputDOM.innerHTML.toString()
+
+//         console.log("i acknowledge that the button was pressed.")
+//         ctrlBack = false
+
+//     }
+
+// }
+
+inputDOM.onkeydown = function() {
+
+    let input = inputDOM.innerHTML.toString()
+    let key = event.keyCode || event.charCode
+    let divContents = document.getElementById(selectedDivId.toString()).innerHTML
+    // console.log(key)
+    // console.log(selectedDivId)
+
+    // if(ctrlBack) {
+    //     let currentLength = input.toString().length
+    //     let foundSpace = false
+    //     console.log("this should be doing something")
+
+    //     for(let deinc = currentLength; foundSpace; deinc--) {
+    //         console.log(input.charAt(deinc))
+    //         if(input.toString().charAt(deinc) === " ") {
+    //             foundSpace = true
+    //         }
+    //     }
+
+    // }
+
+    if(65 <= key && key <= 90 || key === 32) {
+
+        inputDOM.onkeyup = function() {
+        console.log(selectedDivId)
+        console.log("div contents: " + divContents + "  selected div id: " + input.charAt(0))
+        // console.log("selected div id" + selectedDivId)
+        
+        }
+
+        if(input.charAt(selectedDivId) === divContents) {
+            // console.log("yeah that's good")
+            document.getElementById(selectedDivId.toString()).style.color = "white"
+        }
+    
+        if(input.charAt(selectedDivId - 1) != divContents) {
+            // console.log("NO BAD")
+            document.getElementById(selectedDivId.toString()).style.color = "#F75656"
+        }
+
+    	selectedDivId++
+    }
+
+    if(key === 8) {
+        selectedDivId--
+        document.getElementById(selectedDivId.toString()).style.color = "#C8C9CA"
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ok so it works. i just need to find a way to make it so it doesn't fucking die every time i use a word set that isn't the 
+// current one. i think that you could do the thing where you go through the word list, still use teh character limit per line
+// and then once you get the character limit, get a substring of the text up until that point, send it over to a function
+// which will then generate a table with the total number of cells that the string has characters and set the cell values according
+// to the corresponding value in the string. 
+//everything else would be just like it is currently though. not much else

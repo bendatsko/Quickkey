@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html xml:lang>
+    <head>
+        <title>quickkey</title>
+        <link rel="stylesheet" href="../src/sass/style.css">
+    </head>
+
+<body>
+    <div id="title">
+        <div id="quick">quick<span id="key">key</span></div>
+    </div>
+
+    
+    <!-- <div id="test-type">test type: <span id="test-time">time</span> <span id="test-words">words</span></div> -->
+   
+
+
+
+
+    <div id="wordListContainer">
+        
+        <div id="caret"></div>
+
+        <div id="word-set">
+            <div id="test-type">words: <span id="test-25" style="cursor: pointer">10</span> <span id="test-50" style="cursor: pointer">25</span> <span id="test-100" style="color: #F75656; cursor: pointer;">50</span> <span id="test-200" style="cursor: pointer">100</span></div>
+            <div id="test-stats">acc: <span id="accuracyDisplay">XX</span><span> • wpm: </span><span id="speedDisplay">XX</span></div>
+        </div>
+    
+    </div>
+    <!-- <div id="words-input" contenteditable="true"></div> -->
+
+    
+    </div>
+
+    <div id="reset-container">
+        <img src="/src/graphics/restart-arrow.svg" alt="reset-icon" id="reset-icon"> 
+    </div>
+
+    <div id="about-title">about
+        <div id="about-desc" style="opacity: 80%;">quickkey is a minimalistic typing test with word sets composed of an assortment of english's 1000 most common words.</div>
+    </div>
+
+    <div id="results-title">results
+        <div id="results-desc" style="opacity: 80%;">wpm - the number of words typed per minute (accounts for errors).<br>acc - typing accuracy, displayed as a percentage of typed characters over the total number of characters in a specific word set.</div>
+    </div>
+
+    <div id="graph-title">wpm/time graph
+        <div id="graph-desc" style="opacity: 80%;">a graph displaying fluctuations in raw wpm (wpm without regards to accuracy) throughout a typing test.</div>
+    </div>
+
+    <div id="contact-title">contact
+        <div id="contact-desc" style="opacity: 80%;">if you encounter a bug, have a feature request, or just want to say hi, you can reach me through this project's <span id="red">github</span> repository.</div>
+    </div>
+
+    <div id="bgblob1"><img src="/src/graphics/bgblob1.svg" alt="reset-icon" id="bgblob1"></div>
+    <div id="bgblob2"><img src="/src/graphics/bgblob2.svg" alt="reset-icon" id="bgblob2"></div>
+    <div id="bgblob3"><img src="/src/graphics/bgblob3.svg" alt="reset-icon" id="bgblob3"></div>
+    <div id="bgblob4"><img src="/src/graphics/bgblob4.svg" alt="reset-icon" id="bgblob4"></div>
+    <div id="bgblob5"><img src="/src/graphics/bgblob5.svg" alt="reset-icon" id="bgblob5"></div>
+
+    <script src="lib/easytimer/dist/easytimer.min.js"></script>
+    <script src="../src/js/typing.js"></script>
+
+</body>
+
+
+
+</html>

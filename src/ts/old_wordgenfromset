@@ -1,0 +1,117 @@
+function createWordset() {
+
+    console.log("generating divs from word list")
+    totalChars = wordList.length
+    let lineCharCount = 0
+    let lineCharMax = 62
+    let lineInt = 0
+
+    let totalLineCount = Math.round(totalChars / lineCharMax)
+
+    for(let lines = 0; lines < totalLineCount; lines++) {
+        let t0 = document.createElement('table')
+        let elementID = "t" + lines
+        t0.setAttribute("id", elementID);
+        wordListTable.appendChild(t0)
+    }
+
+
+    //populate table
+    for(let i = 0; i < wordList.length; i++) {
+
+        lineCharCount++ //number of characters in the current line
+        let lineStr = "t" + lineInt //the name of the current line
+        let th = document.createElement('TH') //creates the next cell in the row
+        document.getElementById(lineStr).appendChild(th) //adds the newest element to the current line
+        let availableSpace = lineCharMax - lineCharCount
+
+        let foundSpace = false
+        let charsUntilNextWord = 0
+
+        //calculates the amount of characters until the next word
+        if(wordList.charAt(i) === " ") {
+            for(let j = 1; !foundSpace; j++) {
+                charsUntilNextWord++
+                if(wordList.charAt(i + j) === " ") {
+                    console.log("current character: " + wordList.charAt(i) + "\nnext character: " + wordList.charAt(i + j) + "\nchars until next word: " + charsUntilNextWord + "\navailable space: " + availableSpace)
+                    foundSpace = true
+                }
+            }
+        }
+    
+
+        if(availableSpace < charsUntilNextWord) { //change the line
+            console.log("JUST MADE A NEW LINE!!!!")
+            lineInt++
+            lineCharCount = 0
+            charsUntilNextWord = 0
+        }
+
+        if(wordList.charAt(i) === " ") {
+            th.appendChild(document.createTextNode(String.fromCharCode(160)))
+        }
+        th.appendChild(document.createTextNode(wordList.charAt(i)))
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       if(charsInCurrentLine + charsUntilNextWord > charsPerLine) {
+            let wrappedWord : string
+            let canGenerateWrappedWord = true
+
+            while(canGenerateWrappedWord) {
+                let incrementToken : number
+                wrappedWord = wrappedWord + wordList.charAt(i + incrementToken)
+                incrementToken++
+            }
+
+            i = i + wrappedWord.length
+            charsInCurrentLine = 0
+            // placeCharNewLine(wrappedWord)
+        }
+
+        if(charsInCurrentLine + charsUntilNextWord < charsPerLine) {
+            placeCharTypical(i)
+        }
+
+    }
+}
+
+function placeCharTypical(iteration) {
+    charsInCurrentLine++ //number of characters in the current line
+    let lineStr = "t" + activeLine //the name of the current line
+    let th = document.createElement('TH') //creates the next cell in the row
+    document.getElementById(lineStr).appendChild(th) //adds the newest element to the current line
+
+}
+
+
+// function placeCharNewLine(wrappedWord) {
+
+// }

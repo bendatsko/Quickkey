@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap");
+body {
+  background: #23272A;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#red {
+  color: #F75656;
+}
+
+#title {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  position: absolute;
+  font-size: 6.6vh;
+  width: 100vw;
+  text-align: center;
+  margin-top: 18vh;
+}
+#title #quick {
+  color: white;
+}
+#title #key {
+  color: #F75656;
+}
+
+#test-type {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-size: 2.65vh;
+  font-weight: 700;
+  color: #C8C9CA;
+  margin-left: 22vw;
+  margin-top: 38vh;
+}
+
+#test-length-words {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-size: 2.65vh;
+  font-weight: 700;
+  color: #C8C9CA;
+  margin-left: 64vw;
+  margin-top: 38vh;
+}
+
+#word-set {
+  position: absolute;
+  color: #C8C9CA;
+  font-family: "Inter", sans-serif;
+  font-size: 3.18vh;
+  font-weight: 100;
+  width: 56vw;
+  margin-left: 22vw;
+  margin-top: 43vh;
+  line-height: 143%;
+}
+
+#words-input {
+  position: absolute;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 3.18vh;
+  font-weight: 500;
+  width: 56vw;
+  margin-left: 22vw;
+  margin-top: 43vh;
+  line-height: 143%;
+  outline: 0px solid transparent;
+}
+
+#errorSpan {
+  color: #F75656;
+}
+
+#reset-container {
+  position: absolute;
+  width: 3.8vw;
+  height: 3.8vw;
+  background: #2C2F33;
+  margin-left: 48vw;
+  margin-top: 71vh;
+  border-radius: 1.5vh;
+}
+#reset-container #reset-icon {
+  width: 2.2vw;
+  height: 2.2vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+}
+
+#about-title {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  width: 12.6vw;
+  font-size: 8.5vh;
+  margin-top: 101vh;
+  margin-left: 22vw;
+  color: #FFFF;
+}
+
+#about-desc {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  width: 56vw;
+  font-size: 3.18vh;
+  margin-top: 112vh;
+  margin-left: 22vw;
+  color: #FFFF;
+}
+
+#results-title {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  width: 12.6vw;
+  font-size: 5.31vh;
+  margin-top: 125vh;
+  margin-left: 22vw;
+  color: #FFFF;
+}
+
+#results-desc {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  width: 56vw;
+  font-size: 3.18vh;
+  margin-top: 133vh;
+  margin-left: 22vw;
+  color: #FFFF;
+}
+
+#graph-title {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  width: 40vw;
+  font-size: 5.31vh;
+  margin-top: 150vh;
+  margin-left: 22vw;
+  color: #FFFF;
+}
+
+#graph-desc {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  width: 56vw;
+  font-size: 3.18vh;
+  margin-top: 160vh;
+  margin-left: 22vw;
+  color: #FFFF;
+}
+
+#contact-title {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  width: 40vw;
+  font-size: 5.31vh;
+  margin-top: 172.5vh;
+  margin-left: 22vw;
+  color: #FFFF;
+}
+
+#contact-desc {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  width: 56vw;
+  font-size: 3.18vh;
+  margin-top: 182.5vh;
+  margin-left: 22vw;
+  color: #FFFF;
+}
+
+#bgblob1 {
+  position: absolute;
+  width: 24vw;
+  margin-top: 0;
+  margin-left: 0vw;
+}
+
+#bgblob2 {
+  position: absolute;
+  width: 24vw;
+  margin-top: 21vh;
+  margin-left: 37.5vw;
+}
+
+#bgblob3 {
+  position: absolute;
+  width: 19vw;
+  margin-top: 37vh;
+  margin-left: 37.5vw;
+}
+
+#bgblob4 {
+  position: absolute;
+  width: 19vw;
+  margin-top: 50vh;
+  margin-left: 4vw;
+}
+
+#bgblob5 {
+  position: absolute;
+  margin-top: 100vh;
+  margin-left: -15vh;
+}
+
+/*# sourceMappingURL=layout.css.map */
