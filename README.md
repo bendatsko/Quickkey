@@ -6,7 +6,7 @@
 
 ## Instructions
 
-- To generate a list of words, click on either 25, 50, 100, or 200 to generate a word set with the corresponding number of words.
+- To generate a list of words, click on either 10, 25, 50, or 100 to generate a word set with the corresponding number of words.
 - To begin a test, click within the text field to bring it into focus. At this point, a cursor will appear within the field signifying that you may begin typing at any time. As you type, characters that you type correctly will appear white, whereas characters incorrectly typed appear red. 
 - Once you have finished a test, you may view your words per minute (expressed as WPM) given your accuracy (shortened to “ACC.”), both of which are displayed in the top right corner of the text field. 
 - You may generate a new of the same length by clicking the “reset” button located beneath the typing field.
