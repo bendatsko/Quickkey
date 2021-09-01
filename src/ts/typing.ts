@@ -497,26 +497,27 @@ document.onkeydown = function () {
 
       let rawWPM = wordTotal / (totalTime / 60);
 
-      let wrongChars = 0;
+      let wrongChars = 0
       //calculate number of errors
       for (let i = 0; i < wordList.length; i++) {
         // console.log(i.toString())
 
         // console.log(document.getElementById(i.toString()).style.color)
 
-        if (
-          document.getElementById(i.toString()).style.color ===
-          "rgb(247, 86, 86)"
-        ) {
+        if (document.getElementById(i.toString()).style.color === "rgb(247, 86, 86)" && document.getElementById(i.toString()).innerHTML !== "&nbsp; ") {
           wrongChars++;
         }
       }
 
+
+
+
+
       console.log("number of wrong characters: " + wrongChars);
-      let percentageCharsCorrect = (wordList.length - wrongChars) / totalChars;
+      let percentageCharsCorrect = (totalChars - (wrongChars)) / totalChars;
       console.log(
         "percentage of characters that are correct: " +
-          wrongChars +
+          wordTotal +
           "\nTotal number of characters: " +
           totalChars
       );
@@ -526,13 +527,14 @@ document.onkeydown = function () {
       console.log(
         "WPM OUTPUT FOR DEBUG: " +
           percentageCharsCorrect +
-          "\n" +
+          "\n" + "total chars: "
           totalChars +
-          "\n" +
+          "\n" + "wrong chars: "
           wrongChars +
-          "\n" +
-          +rawWPM +
-          "\n"
+          "\n" + "raw wpm: "
+          rawWPM +
+          "\n" + "adjusted wpm: "
+          adjustedWPM
       );
 
       document.getElementById("speedDisplay").innerHTML =

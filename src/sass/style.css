@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
   background: #23272A;
@@ -75,7 +76,7 @@ body {
 #word-set {
   position: absolute;
   color: #acadad;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 3.18vh;
   margin-top: 43vh;
   line-height: 150%;
@@ -103,8 +104,6 @@ body {
   color: white;
   font-family: "Lexend Deca", sans-serif;
   font-size: 3.18vh;
-  font-weight: 500;
-  width: 56vw;
   margin-left: 22vw;
   margin-top: 20vh;
   line-height: 143%;
@@ -170,7 +169,7 @@ body {
 
 #about-desc {
   position: absolute;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   width: 60vw;
   font-size: 3vh;
@@ -180,7 +179,7 @@ body {
 #results-title {
   position: absolute;
   font-family: "Lexend Deca", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   width: 12.6vw;
   font-size: 5.31vh;
   margin-top: 125vh;
@@ -190,7 +189,7 @@ body {
 
 #results-desc {
   position: absolute;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   width: 60vw;
   font-size: 3vh;
@@ -200,7 +199,7 @@ body {
 #graph-title {
   position: absolute;
   font-family: "Lexend Deca", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   width: 40vw;
   font-size: 5.31vh;
   margin-top: 150vh;
@@ -210,7 +209,7 @@ body {
 
 #graph-desc {
   position: absolute;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   width: 60vw;
   font-size: 3vh;
@@ -220,7 +219,7 @@ body {
 #contact-title {
   position: absolute;
   font-family: "Lexend Deca", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   width: 40vw;
   font-size: 5.31vh;
   margin-top: 172.5vh;
@@ -230,7 +229,7 @@ body {
 
 #contact-desc {
   position: absolute;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   width: 60vw;
   font-size: 3vh;

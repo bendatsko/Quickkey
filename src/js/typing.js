@@ -449,28 +449,24 @@ document.onkeydown = function () {
             for (var i = 0; i < wordList.length; i++) {
                 // console.log(i.toString())
                 // console.log(document.getElementById(i.toString()).style.color)
-                if (document.getElementById(i.toString()).style.color ===
-                    "rgb(247, 86, 86)") {
+                if (document.getElementById(i.toString()).style.color === "rgb(247, 86, 86)" && document.getElementById(i.toString()).innerHTML !== "&nbsp; ") {
                     wrongChars++;
                 }
             }
             console.log("number of wrong characters: " + wrongChars);
-            var percentageCharsCorrect = (wordList.length - wrongChars) / totalChars;
+            var percentageCharsCorrect = (totalChars - (wrongChars)) / totalChars;
             console.log("percentage of characters that are correct: " +
-                wrongChars +
+                wordTotal +
                 "\nTotal number of characters: " +
                 totalChars);
             var adjustedWPM = Math.round(rawWPM * percentageCharsCorrect);
             // console.log(adjustedWPM)
             console.log("WPM OUTPUT FOR DEBUG: " +
                 percentageCharsCorrect +
-                "\n" +
-                totalChars +
-                "\n" +
-                wrongChars +
-                "\n" +
-                +rawWPM +
-                "\n");
+                "\n" + "total chars: ", totalChars +
+                "\n" + "wrong chars: ", wrongChars +
+                "\n" + "raw wpm: ", rawWPM +
+                "\n" + "adjusted wpm: ", adjustedWPM);
             document.getElementById("speedDisplay").innerHTML =
                 adjustedWPM.toString();
             document.getElementById("accuracyDisplay").innerHTML =
