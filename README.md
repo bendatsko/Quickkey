@@ -30,5 +30,5 @@ If you have found a bug, please peport it to the [bug tracker](https://github.co
 
 ## Release Notes
 
-v1.0: Initial release! Albeit a bit buggy, most features are working as intended. 1.0.1 is already in the works!
+v1.0: Initial release! Albeit a bit buggy, most major features are working as intended (with the exception of the wpm/time graph, which will arrive in a future update).
 
